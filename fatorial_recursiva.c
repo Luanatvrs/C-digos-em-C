@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-unsigned long long fat(unsigned long long val){
+int fat(int val){
     if(val<=1)return 1;
     else return (val*fat(val-1));
 }
 
 int main(){
-    unsigned long long val,res;
+    int val,res;
 
     printf("informe um valor: ");
     scanf("%i",&val);
